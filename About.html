@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GMM42955L"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4GMM42955L');
+        </script>
+        <title> Biomedical Engineering Club: About</title>
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="shared.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="icon" href="faviconboi.ico">
+    </head>
+ <body>
+ <!--Navigation Bar-->
+<nav id="navbar" class="navbar">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">&#9776;</button>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="About.html">About</a>
+        </li>
+        <li>
+            <a href="Fields.html">Fields</a>
+        </li>
+        <li>
+            <a href="Opportunities.html">Opportunities</a>
+        </li>
+        <li>
+            <a href="Resources.html">Resources</a>
+        </li>
+        <li>
+            <a href="MeetOurTeam.html">Meet Our Team</a>
+        </li>
+    </ul>
+</nav>
+<script src="homescript.js"></script>
+ <h1 class="title">About</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--About Me: Who we are-->
+<div class="container">
+    <div class="image">
+        <img src="yearbookpic.png" alt="YEARBOOK PIC">
+    </div>
+    <div class="text">
+        <p> We are a team of high school students from the Bay Area, passionate about the interdisciplinary areas within the biomedical engineering field. Originally, this club was founded by a group of students with two shared interests: some of us were drawn to the medical field, while others were passionate about technology. Biomedical Engineering became the natural bridge between these interests, inspiring us to form a community where both perspectives could come together to learn, collaborate, and innovate.  </p>
+  <br class="linebreak">
+        <p>Through countless months of effort, we’ve shaped our club’s identity through a defined mission, cohesive visuals, and hands-on initiatives centered on collaboration and impact. Through projects, workshops, and outreach, we aim to tell a story rooted in interdisciplinary learning and growth. We hope that with this website, visitors can learn more about our mission, explore our work, and become part of our growing community.</p>
+<br class="linebreak">
+        <p>To learn more about our team, visit our <a href="MeetOurTeam.html">Meet The Team</a> page.</p>
+
+    </div>
+</div>
+
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<!--About me: Activities we have done-->
+<div class="activities-section">
+    <h1 class="activities">Some of our Past Activities</h1>
+    <p>The Biomedical Engineering Club's meetings are full of engaging discussions, exploring opportunities for members to learn, grow, and most importantly, get involved. We also offer a variety of hands-on activities to keep everyone informed and inspired.</p>
+    <div class="carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="sonographymeeting.jpg" alt="Sonography activity">
+                    <div class="slide-caption">Biomedical Engineering members make diagrams showing babies and handheld fetal dopplers in our sonography activity.</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="presentingpic.jpg" alt="Presenting opportunities">
+                    <div class="slide-caption">President Rishika Basnet and Vice President Grace Chen present potential summer opportunities to members.</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="cookiepic.jpg" alt="Cookie meeting">
+                    <div class="slide-caption">Club members enjoying cookies and conversation amongst each other post-meeting.</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="officerpicunupdated.png" alt="Club day trifold">
+                    <div class="slide-caption">Biomedical Engineering officers standing around the club day informational trifold.</div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev-btn" disabled>&#8592;</button>
+            <button class="carousel-btn next-btn">&#8594;</button>
+        </div>
+    </div>
+    <script>
+        (function() {
+            var carousel = document.querySelector('.activities-section .carousel');
+            var track = carousel.querySelector('.carousel-track');
+            var slides = track.querySelectorAll('.carousel-slide');
+            var prevBtn = carousel.querySelector('.prev-btn');
+            var nextBtn = carousel.querySelector('.next-btn');
+            var current = 0;
+            var total = slides.length;
+
+            function getSlideWidth() {
+                return slides[0].offsetWidth + 16;
+            }
+
+            function goTo(n) {
+                current = Math.max(0, Math.min(n, total - 1));
+                track.style.transform = 'translateX(-' + (current * getSlideWidth()) + 'px)';
+                prevBtn.disabled = current === 0;
+                nextBtn.disabled = current === total - 1;
+            }
+
+            prevBtn.addEventListener('click', function() { goTo(current - 1); });
+            nextBtn.addEventListener('click', function() { goTo(current + 1); });
+            window.addEventListener('resize', function() {
+                track.style.transform = 'translateX(-' + (current * getSlideWidth()) + 'px)';
+            });
+        })();
+    </script>
+</div>
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<br class="linebreak">
+<!--Contact Us section-->
+<h1 class="contactus"> Contact Us</h1>
+<div class="socials">
+    <div class="socials-item">
+        <a href="mailto:Biomedeng2027@gmail.com">
+            <img class="gmail" src="Gmailicon.tiff" alt="Gmail Logo">
+            <p> Email...........Biomedeng2027@gmail.com</p>
+        </a>
+    </div>
+    <div class="socials-item">
+        <a href="https://www.instagram.com/Biomedgineering" target="_blank">
+            <img class="insta" src="Instagramicon.png" alt="Instagram Logo">
+            <p>Instagram........@Biomedgineering</p>
+        </a>
+    </div>
+    <div class="socials-item">
+        <a href="https://www.tiktok.com/@Biomedgineering" target="_blank">
+            <img class="tiktok" src="Tiktokicon.png" alt="Tiktok Logo">
+            <p>Tiktok............@Biomedgineering</p>
+        </a>
+    </div>
+</div>
+<section class="footer">
+    <footer>
+        <h5> Have any questions? Contact us at Biomedeng2027@gmail.com</h5>
+    </footer>
+ </section>
+ </body>
+</html>
