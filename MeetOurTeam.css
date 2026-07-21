@@ -1,0 +1,825 @@
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(209, 188, 240);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    gap: 20px;
+}
+ul li {
+   float: left;   
+}
+ul li a {
+    display: block;
+    color: rgb(64, 47, 86);
+    text-align: center;
+    padding: 14px 14px;
+    font-size:larger;
+    text-decoration-line: underline;
+}
+ul li a hover {
+    background-color: #111111;
+}
+h1 {
+    font-family:Impact;
+    text-align:center;
+    color:rgb(64, 47, 86);
+    font-size: 60px;
+ }
+ .maintitle {
+  margin-top: 30px;
+ }
+ .officers {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    max-width: 400px;
+    min-width: 180px;
+    height: auto;
+    display: block;
+    box-shadow: 0 4px 15px rgb(0,0,0);
+    border-radius: 8px;
+ }
+ h2 {
+    font-family:Georgia;
+    text-align:center;
+    color:rgb(64, 47, 86);
+    font-size: 25px;  
+    font-weight:100;
+    margin-left:50px;
+    margin-right:50px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateY(0); 
+  transition: transform 0.3s ease; 
+  z-index: 1000;
+}
+
+
+.navbar.hide {
+  transform: translateY(-100%);
+}
+/*Rishika Section*/
+ .container {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;   
+}
+
+.image {
+  padding-left: 45px;
+}
+.image img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: left;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image img {
+    width: 100%; 
+  }
+}
+/*Rishika Paragraph*/
+.text {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+@media (max-width: 768px) {
+  .text {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Grace Section*/
+.container2 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;
+}
+
+.image2 {
+  padding-right: 45px;
+}
+.image2 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text2 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title2 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: right;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .container2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image2 img {
+    width: 100%; 
+  }
+}
+/*Grace Paragraph*/
+.text2 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+  text-align:right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .text2 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Angelina Section*/
+ .container3 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;   
+}
+
+.image3 {
+  padding-left: 45px;
+}
+.image3 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text3 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title3 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: left;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+  .container3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image3 img {
+    width: 100%; 
+  }
+}
+/*Angelina Paragraph*/
+.text3 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+@media (max-width: 768px) {
+  .text3 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Allison Section*/
+.container4 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;
+}
+
+.image4 {
+  padding-right: 45px;
+}
+.image4 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text4 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title4 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: right;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .container4 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image4 img {
+    width: 100%; 
+  }
+}
+/*Allison Paragraph*/
+.text4 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+  text-align:right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .text4 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+/*Chalida Section*/
+ .container5 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;   
+}
+
+.image5 {
+  padding-left: 45px;
+}
+.image5 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text5 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title5 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: left;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+  .container3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image3 img {
+    width: 100%; 
+  }
+}
+
+/*Chalida Paragraph*/
+.text5 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+@media (max-width: 768px) {
+  .text5 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Tiffany Section*/
+.container6 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;
+}
+
+.image6 {
+  padding-right: 45px;
+}
+.image6 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text6 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title6 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: right;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .container6 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image6 img {
+    width: 100%; 
+  }
+}
+/*Tiffany Paragraph*/
+.text6 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+  text-align:right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .text6 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Ella Section*/
+ .container7 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;   
+}
+
+.image7 {
+  padding-left: 45px;
+}
+.image7 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text7 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title7 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: left;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+  .container7 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image7 img {
+    width: 100%; 
+  }
+}
+
+/*Ella Paragraph*/
+.text7 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+@media (max-width: 768px) {
+  .text7 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Social Media Admin Section*/
+.container8 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;
+}
+
+.image8 {
+  padding-right: 45px;
+}
+.image8 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text8 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title8 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: right;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+
+@media (max-width: 500px) {
+  .container8 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image8 img {
+    width: 100%; 
+  }
+}
+/*Social Media Admin Paragraph*/
+.text8 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(0.9rem, 1.2vw, 1.2rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+  text-align:right;
+  margin-left: auto;
+}
+
+@media (max-width: 768px) {
+  .text8 {
+    max-width: 100%; 
+  }
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+/*Upperclassman Rep Section*/
+ .container9 {
+  display: flex;            
+  align-items: flex-start;      
+  gap: 15px;                
+  padding: 0;               
+  flex-wrap: wrap;   
+}
+
+.image9 {
+  padding-left: 45px;
+}
+.image9 img {
+  width: 300px;         
+  max-width: 100%;         
+  height: auto;             
+  display: block;   
+  border-radius: 20px;   
+  box-shadow: 0 4px 13px rgb(0,0,0); 
+}
+
+.text9 {
+  flex: 1;                  
+  min-width: 200px;
+  margin-top:10px;
+}
+
+.title9 {
+  font-weight: 800; 
+  font-size:xx-large;
+  text-align: left;
+  margin: 0;
+  font-family:impact;
+}
+p {
+  font-size: 20px;
+}
+h3 {
+    font-size: large;
+}
+
+@media (max-width: 500px) {
+  .container9 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .image9 img {
+    width: 100%; 
+  }
+}
+
+/*Upperclassman Rep Paragraph*/
+.text9 {
+  max-width: 35%;        
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.5rem); 
+  line-height: 1.4; 
+  font-size: clamp(14px, 1.5vw, 18px);
+  font-family:Georgia;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+@media (max-width: 768px) {
+  .text9 {
+    max-width: 100%; 
+  }
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.break::after {
+  content: "";
+  display: block;
+  margin-top: 0.3em;  
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  background:
+    linear-gradient(rgba(243,222,253,0.7), rgba(243,222,253,1)),
+    url("backgroundbetatest.png");
+  background-repeat:250px 200px;
+}
+
+/* ── Mobile: stack all officer sections vertically ── */
+@media (max-width: 768px) {
+  /* Shared layout for all containers */
+  .container, .container2, .container3, .container4, .container5,
+  .container6, .container7, .container8, .container9 {
+    align-items: center !important;
+    padding: 0 20px !important;
+    gap: 16px !important;
+  }
+
+  /* Odd containers: image is first in HTML → column keeps photo on top */
+  .container, .container3, .container5, .container7, .container9 {
+    flex-direction: column !important;
+  }
+
+  /* Even containers: text is first in HTML → column-reverse puts photo on top */
+  .container2, .container4, .container6, .container8 {
+    flex-direction: column-reverse !important;
+  }
+
+  .image, .image2, .image3, .image4, .image5,
+  .image6, .image7, .image8, .image9 {
+    padding: 0 !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image img, .image2 img, .image3 img, .image4 img, .image5 img,
+  .image6 img, .image7 img, .image8 img, .image9 img {
+    width: 60% !important;
+    max-width: 280px !important;
+  }
+
+  .text, .text2, .text3, .text4, .text5,
+  .text6, .text7, .text8, .text9 {
+    max-width: 100% !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    font-size: clamp(14px, 3.5vw, 18px) !important;
+  }
+
+  .title, .title2, .title3, .title4, .title5,
+  .title6, .title7, .title8, .title9 {
+    text-align: left !important;
+    font-size: clamp(20px, 5vw, 32px) !important;
+  }
+
+  .officers {
+    width: 65% !important;
+    max-width: 300px !important;
+    min-width: unset !important;
+  }
+}
+
+/*footer*/
+.footer {
+    background-color: rgba(243, 222, 253);
+}
+footer {
+    text-align:center;
+    padding:10px;
+    font-size: 350;
+    font-family:Helvetica;
+ }
