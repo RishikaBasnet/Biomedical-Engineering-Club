@@ -1,0 +1,115 @@
+/* ── Shared responsive styles across all pages ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* Universal box-sizing and horizontal overflow guard */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Space for fixed navbar */
+body {
+  padding-top: 56px;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Body text font and color */
+p, li, td, caption, label, span {
+  font-family: 'Josefin Sans', sans-serif;
+  color: rgb(64, 47, 86);
+}
+
+/* Link color — matches the site's dark purple used on the Fields page */
+a {
+  color: rgb(64, 47, 86);
+}
+
+a:visited {
+  color: rgb(64, 47, 86);
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* ── Hamburger button (hidden on desktop) ── */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: rgb(64, 47, 86);
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Mobile navigation ── */
+@media (max-width: 768px) {
+  /* Give navbar a visible purple bar and minimum height */
+  .navbar {
+    background-color: rgb(209, 188, 240);
+    min-height: 56px;
+  }
+
+  /* Show hamburger at top-right of the bar */
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Collapsible link list — stays in normal flow so navbar expands around it */
+  .navbar ul {
+    flex-direction: column !important;
+    height: auto !important;
+    max-height: 0;
+    overflow: hidden;
+    gap: 0 !important;
+    transition: max-height 0.35s ease;
+    width: 100%;
+    background-color: rgb(209, 188, 240);
+    padding: 0 !important;
+  }
+
+  .navbar ul.open {
+    max-height: 500px;
+  }
+
+  ul li {
+    float: none !important;
+    width: 100% !important;
+  }
+
+  ul li a {
+    font-size: 1rem !important;
+    padding: 12px 20px !important;
+    border-top: 1px solid rgba(64, 47, 86, 0.2);
+    text-align: center;
+    display: block;
+  }
+
+  /* Global responsive type scale */
+  h1 {
+    font-size: clamp(24px, 6vw, 60px) !important;
+  }
+
+  h2 {
+    font-size: clamp(14px, 3.5vw, 25px) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+
+  p {
+    font-size: clamp(14px, 3.5vw, 20px) !important;
+  }
+}
