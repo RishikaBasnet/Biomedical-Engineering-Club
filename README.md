@@ -34,6 +34,7 @@ These shared files allow the website to maintain a consistent design and functio
 
 The simplified repository structure is organized as follows:
 
+```text
 Biomedical-Engineering-Club/
 │
 ├── assets/
@@ -52,3 +53,4 @@ Biomedical-Engineering-Club/
 │   └── shared.css
 │
 └── README.md
+```
