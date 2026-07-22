@@ -46,9 +46,9 @@ Biomedical-Engineering-Club/
 │   ├── [Fields Page]/
 │   ├── [Home Page]/
 │   ├── [Meet Our Team Page]/
-|   ├── [Opportunities Page]/
+│   ├── [Opportunities Page]/
 │   ├── [Resources Page]/
-|   ├── homescript.js
-|   └── shared.css
-|   
+│   ├── homescript.js
+│   └── shared.css
+│
 └── README.md
