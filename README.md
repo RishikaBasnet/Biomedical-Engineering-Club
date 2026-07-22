@@ -1,5 +1,7 @@
 # Biomedical-Engineering-Club
 ![Biomedical Engineering Club](Assets/Images/logo.jpg)
+
+
 Check out the real website here! www.https://biomedgineering.org 
 
 The Biomedical Engineering Club was created to give students an opportunity to explore the intersection of biology, medicine, and engineering through hands-on learning and collaboration. The club aims to make biomedical engineering more accessible to students by providing a space where members can learn about emerging technologies, develop technical skills, and work together on projects that connect engineering concepts to real-world challenges in healthcare and medicine. Through this website, the club can share its work, resources, projects, and opportunities with both current and prospective members, regardless of geographical disparities.
